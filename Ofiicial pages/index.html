@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>did you know ? </title>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	<link href="index.css" rel="stylesheet" type="text/css" >
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+	*{
+	margin:0;
+	padding:0;
+	}
+	header{
+	height:60px;
+	background:hwb(0 17% 83%);
+	padding:0 50px;
+	}
+	.logo{
+	width:30%;
+	float:left;
+	color:rgb(7, 0, 0);
+	font-weight:bold;
+	text-transform:uppercase;
+	line-height:60px;
+	font-size:35px;
+	font-family:sans-serif;
+	}
+	nav{
+	width:68%;
+	float:right;
+	}
+	nav ul{
+	list-style:none;
+	float:right;
+	}
+	nav ul li{
+	display: inline-block;
+	}
+	nav ul li a{
+	text-decoration: none;
+	color:#fff;
+	font-family:sans-serif;
+	font-weight:bold;
+	margin:0 10px;
+	line-height:60px;
+	text-transform:uppercase;
+	}
+	.banner{
+	height:100%;
+	}
+	.banner img{
+	width:100%;
+	height:90vh;
+	}
+	.content{
+	padding:5%;
+	}
+	.content p{
+	font-size:18px;
+	line-height:1.7;
+	font-family:sans-serif;
+	margin-bottom:25px;
+	}
+	footer{
+	background:rgb(36, 34, 34);
+	color:#fff;
+	padding:15px 50px;
+	text-align:center;
+	}
+	   
+	   
+	   @media (max-width: 600px){        
+
+	header {
+	 width: 100%;
+	 height: 100%;
+	 padding: 0;
+	 text-align: center;
+	}
+	.logo {
+	 width: 100%;
+	 float: none;
+	}
+	nav {
+	 width: 100%;
+	 float: none;
+	}
+	nav ul li {
+	 display: block;
+	}
+	nav ul {
+	 float: none;
+	}
+	   }    
+	   ::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+       } 
+	   ::-webkit-scrollbar-thumb {
+    background: #434343;
+    border-radius: 16px;
+	box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+	   }
+	   ::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111);
+        }     
+	.image img:hover{
+		transform: rotate(12deg);
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			Plethora
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<a href="https://www.youtube.com/channel/UCWWDImjDg-91KBoHO2ZkCUQ" target="_blank">youtube</a>
+				</li>
+				<li>
+					<a href="feedback.html"target="_blank">feedback</a>
+				</li>
+				<li>
+					<a href="post.html"target="_blank">post</a>
+				</li>
+				<li>
+					<a href="login.html"target="_blank">login</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+    <div class="slider">
+
+		<div id="moreimg">
+		  <img src="img/e.jpg">
+		</div>
+	
+	  </div>
+	
+	  <script>
+	
+		var images = ['img/a.jpg', 'img/b.jpg', 'img/c.jpg', 'img/d.jpg', 'img/e.jpg'];
+	
+		var x = 0;
+	
+		var imgs = document.getElementById('moreimg');
+	
+		setInterval(slider, 2000);
+	
+	
+		function slider() {
+	
+		  if (x < images.length) {
+			x = x + 1;
+		  } else {
+			x = 1;
+		  }
+	
+	
+		  imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+	
+	
+		}
+	
+	
+	  </script>
+	
+	
+	  <style type="text/css">
+		.slider {
+		  width: 90%;
+		  height: 500px;
+		  margin: 20px auto;
+		  box-sizing: border-box;
+		  overflow: hidden;
+		  box-shadow: 5px 5px 10px grey;
+	
+		}
+	
+		 img {
+		  width: 100%;
+		  height: 100%;
+		  animation: ani 2s linear;
+	
+		}
+	
+		@keyframes ani {
+		  0% {
+			transform: scale(1.2);
+		  }
+		  10% {
+			transform: scale(1);
+		  }
+		  100% {
+			transform: scale(1);
+		  }
+		}
+	  </style>
+	  <br>
+	  <br>
+	  <br>
+	  <footer><p style="font-family:Verdana;"><b>ANIMALS</b></p></footer>
+	  <br>
+	<div class="content">
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(9, 134, 211);">One species of jellyfish is immortal</h1>
+		<br>
+		  <img style="height:400px; width:700px;" src="https://static.scientificamerican.com/sciam/cache/file/B7E980C5-B182-4A2E-80369F2AC535EB35_source.jpg">
+		  <br>
+		  <p style="font-family: 'Courier New', Courier, monospace ; color:rgb(9, 134, 211);">Only one animal is known to have this remarkable ability: a species of jellyfish, <em>Turritopsis dohrnii, </em>first discovered in the 1880s in the Mediterranean Sea and highlighted as a uniquely enduring organism in the exhibition <em><a href="/exhibitions/life-at-the-limits" target="_self">Life at the Limits: Stories of Amazing Species.&nbsp;</a></em></p>
+		  <br>
+		  <br>
+		  <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(129, 71, 5);">There was a prehistoric dragonfly that's wings spanned more than two feet</h1>
+		<br>
+		<img alt="" src="https://s3-us-west-1.amazonaws.com/scifindr/articles/image3s/000/002/727/large/meganeuropsis-eating-roach_lucas-lima_3x4.jpg?1470033295" width="700" height="300">
+		<br>
+		<p style="font-family:courier,arial,helvetica; color:rgb(209, 153, 0);">More than 300 million years ago, the <a href="http://eweb.furman.edu/~wworthen/bio440/evolweb/carboniferous/mega.htm" rel="noopener">Meganeura</a> established itself as the largest known flying insect to ever exist on Earth. The dragonfly-like creature had a wingspan that stretched around 2.5 feet. The bugs were also big enough to hunt prey like frogs and newts, which it could eat with its teeth-like mandibles.</p>
+		<br>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color:rgb(1, 204, 8);">A snail can sleep for three years at a time</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://images.theconversation.com/files/301510/original/file-20191113-77331-bdof4y.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1356&h=668&fit=crop" width="700" height="300">
+		<br>
+		<p style="font-family:courier,arial,helvetica; color:rgb(209, 153, 0);">It’s weird to think that snails need to sleep, after all, they don’t look like they do much. Yet, a study at the University of Toronto proved people from all over the world wrong. It turns out, that snails <a href="https://topnaturalmattresses.com/how-long-do-snails-sleep/" class="cs ip" rel="noopener nofollow">sleep for fifteen hours</a> (falling in and out of sleep seven times), and then, go on to do their activities for thirty hours straight.</p>
+		<br>
+		<br>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(0, 0, 0);">A bat can eat up to 1 thousand insects per hour</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://a-z-animals.com/media/2021/04/Fruit-bat-header.jpg" width="700" height="300">
+		<br>
+		<p style="font-family:courier,arial,helvetica; color:rgb(5, 5, 5);">Many of the claims about how many&nbsp;mosquitoes bats eat seem to be based on a <a href="http://www.sciencedirect.com/science/article/pii/0003347260900221">scientific study from 1960</a>&nbsp;in which bats were released&nbsp;into a confined space in a laboratory with large numbers of <em>Culex quinquefaciatus</em> mosquitoes and monitored overnight. The study was not attempting to examine bat feeding patterns in the wild, but rather how the bats used echo-location to track their&nbsp;prey.</p>
+		<br>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color:rgb(9, 134, 211);"> Wild dolphins call each other by name. “Oi, Flipper!”</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://s7d2.scene7.com/is/image/TWCNews/061519_n13-dolphins-noaa" width="700" height="300">
+		<br>
+		<p  style="font-family:courier,arial,helvetica; color:rgb(0, 112, 209);">The evidence that dolphins <a href="http://www.pnas.org/content/103/21/8293">use signature whistles like names</a> has been building since they were first discovered in the 1960s. They can convey a dolphin’s identity, as well as its mood and motivation. Individuals invent their own whistles at a few months of age, possibly with some <a href="http://www.ncbi.nlm.nih.gov/pubmed/15221637">influence from their mums</a>. They’ll keep the same call for decades, although males <a href="http://www.jstor.org/pss/25063393">sometimes change theirs</a> to resemble the whistle of a new ally.</p>
+		<br>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color:rgb(25, 0, 169);">Reindeer eyeballs turn blue in winter to help them see at lower light levels</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://pbs.twimg.com/media/DaZTXZsWsAAQCkl.jpg" width="700" height="300">
+		<br>
+		<p  style="font-family:courier,arial,helvetica; color:rgb(32, 12, 144);">Reindeer may be best known for fictional Rudolph's glowing red nose, but now scientists find the animals can alter color elsewhere as well — the backs of their eyeballs change from gold in the summer to blue in the winter.</p>
+		<br>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color:rgb(211, 9, 157);">The flamingo can only eat when its head is upside-down</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://buzzworthy.s3.amazonaws.com/wp-content/uploads/2016/06/flat550x550075f.jpg" width="700" height="300">
+		<br>
+		<p  style="font-family:courier,arial,helvetica; color:rgb(214, 10, 187);">The flamingo is well-known for its habit of eating with its head upside-down. This behavior is largely due to the structure of its mouth and the logistics of lowering its long, graceful neck into the water. This behavior allows flamingos to feed effectively in their natural habitat, but it has ramifications in other aspects of their lives.</p>
+		<br>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color:rgb(9, 134, 211);">Sharks kill fewer than 10 people per year. Humans kill about 100 million sharks per year.</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://static01.nyt.com/images/2017/04/26/world/26sharks-1/26sharks-1-superJumbo.jpg" width="700" height="300">
+		<br>
+		<p  style="font-family:courier,arial,helvetica; color:rgb(0, 129, 209);">Estimates that emerged from the journal <a href="https://www.sciencedirect.com/science/article/pii/S0308597X13000055">Marine Policy</a> suggest that around <strong>100 million sharks</strong> are killed every year by humans.This number might be vast beyond comprehension but the journal also recognises that it is a conservative estimate and it could by closer to <strong>273 million</strong> killed each year.</p>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color:rgb(211, 164, 9);"> Dogs’ sense of smell is about 100, 000 times stronger than humans’. However, they have only one-sixth our number of taste buds.</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://pbs.twimg.com/media/DaZQ1bzUMAEsBJl.jpg" width="700" height="300">
+		<br>
+		<p  style="font-family:courier,arial,helvetica; color:rgb(209, 153, 0);">Dogs' sense of smell overpowers our own by orders of magnitude—it's 10,000 to 100,000 times as acute, scientists say. "Let's suppose they're just 10,000 times better," says James Walker, former director of the Sensory Research Institute at Florida State University, who, with several colleagues, came up with that jaw-dropping estimate during a rigorously designed, oft-cited study. "If you make the analogy to vision, what you and I can see at a third of a mile, a dog could see more than 3,000 miles away and still see as well."</p>
+		<br>
+		<br>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color:rgb(0, 0, 0);">The male gentoo and Adelie penguins “propose” to females by giving them a pebble</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://i.imgur.com/SYLgQjx.jpg" width="700" height="300">
+		<br>
+		<p  style="font-family:courier,arial,helvetica; color:rgb(0, 0, 0);"><span class="hgKElc"><b>MALE PENGUINS PROPOSE TO FEMALES BY GIVING THEM A PEBBLE Male gentoo penguins</b> look for the smoothest, shiniest <b>pebble</b> to present to <b>females</b> of their choice. If the <b>female</b> accepts, she takes the <b>pebble</b> and places <b>it</b> in her nest, accepting the <b>male</b> as her mate.</span></p>
+		<br>
+		<br>
+		<footer><p style="font-family:Verdana;"><b>plants</b></p></footer>
+		<br>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(129, 5, 92);">Grapes light on fire in the microwave</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://draxe.com/wp-content/uploads/2016/03/GrapesNutritionHeader.jpg" width="700" height="300" alt="Computer Hope">
+		<br>
+        <br>
+		<p style="font-family:courier,arial,helvetica; color:rgb(93, 0, 112);">Back in 2011, a physicist at the University of Sydney went viral after he placed a grape in the microwave and filmed the <a href="https://youtu.be/RwTjsRt0Fzo" rel="noopener">fiery aftermath</a>. And oddly enough, scientists couldn't explain the phenomenon until quite recently. A March 2019 study published in <em>Proceedings of the National Academy of Sciences </em>reported that the fruity fireball occurs as a result of the loose electrons and ions that cluster to <a href="https://www.pnas.org/content/116/10/4000" target="_blank" rel="noopener noreferrer">form plasma when grapes get hot</a>. And here are more of the <a href="https://bestlifeonline.com/crazy-random-facts/" target="_blank" rel="noopener noreferrer">100 Fascinating Facts You'll Want to Share with Everyone You Know</a>.</p>
+		<br>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:rgb(13, 112, 0);">McDonald's once created bubblegum-flavored broccoli</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://www.thevintagenews.com/wp-content/uploads/sites/65/2018/12/pjimage-30.jpg"width="700" height="300" alt="Computer Hope">
+		<br>
+		<br>
+		<p style="font-family:courier,arial,helvetica; color:rgb(13, 112, 0);">McDonald's is always introducing new items for their loyal customers. And obviously, some are more successful than others. But their <a href="https://www.businessinsider.com/mcdonalds-bubble-gum-broccoli-2014-11" target="_blank" rel="noopener noreferrer">bubblegum-flavored broccoli</a>, which the fast-food chain developed in 2014 as a tastier version of the leafy green for children, was a complete failure. McDonald's CEO <strong>Don Thompson</strong> admitted that kids were confused by the taste.</p>
+		<br>
+		<h1  style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(1, 187, 13);">The earth has more than 80,000 species of edible plants.</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://educateinspirechange.org/wp-content/uploads/2019/11/jhngf.jpg" width="700" height="300" alt="Computer Hope">
+		<br>
+		<p style="font-family:courier,arial,helvetica; color:rgb(0, 162, 5);">And pretty much uses just 30 of them.&nbsp; (90 percent of the foods humans eat come from just 30 plants.)&nbsp; And those 30 are based on profit rather than nutrition. We are better at using them for medicine. (70,000 plant species are utilized for medicine.)&nbsp; Still, only 1 percent of rainforest plants have been studied for medicinal potential.</p>
+		<br>
+		<h1  style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(0, 209, 84);">70,000 plant species are utilized for medicine.</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://pbs.twimg.com/media/C_8lTUOVwAEshII.jpg" width="700" height="300">
+		<br>
+		<p style="font-family:courier,arial,helvetica; color:rgb(0, 209, 59);">That’s how much the overall international trade in medicinal plants and their products alone is <a class="link-external" href="https://www.financialexpress.com/archive/global-medicinal-plants-demand-may-touch-5-trillion-by-2050/102863/" rel="nofollow noopener" target="_blank">expected</a> to amount to by the year 2050. Estimates, as far as medicinal plants go, are many. According to one by the World Health Organisation, 70% to 95% of people in many developing countries rely largely on traditional medicine, mostly herbal remedies, for primary healthcare. In 2006, researchers estimated that more than 70,000 plant species were being used in medicines worldwide.<span class="hgKElc">It has been estimated that about 35,000 to <b>70,000 plant species are utilized for medicinal</b> purposes globally, of which 6,500 <b>species</b> belong to Asia.</span></p>
+		<br>
+		<br>
+		<h1  style="font-family: Verdana, Geneva, Tahoma, sans-serifa; color:rgb(0, 209, 0);">Nutrition doesn't factor into the crops we do mass produce</h1>
+		<img style="height:400px; width: 700px;" src="https://static.scientificamerican.com/sciam/cache/file/17028ECC-5CB0-42C8-A43BFCEA9EF40D8C.jpg" width="700" height="300">
+		<br>
+		<p  style="font-family:courier,arial,helvetica; color:rgb(0, 209, 14);"><span class="hgKElc"><b>Nutrition doesn't factor into the crops we do mass produce</b>. The world's largest farmers have pursued certain <b>crops</b> because <b>they can</b> grow a lot of them more quickly, easily and inexpensively <b>to</b> turn a better profit.</span></p>
+		<br>
+		<br>
+		<footer><p style="font-family:Verdana;animation-name: inherit;"><b>people</b></p></footer>
+		<br>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color:rgb(251, 255, 0);">Almost half the world's population watched both the 2010 and 2014 FIFA World Cup games</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://i.pinimg.com/originals/36/05/97/3605975d51c9ea2bb0575873238b420e.jpg" width="700" height="300">
+		<br>
+		<p style="font-family: 'Courier New', Courier, monospace ; color:rgb(255, 196, 0);">In 2010, the <a href="https://www.fifa.com/worldcup/news/almost-half-the-world-tuned-home-watch-2010-fifa-world-cup-south-africat-1473143" rel="noopener">FIFA World Cup South Africa</a> was shown in every country and territory on Earth, including Antarctica and the Arctic Circle, which meant that a record-breaking 3.2 billion people around the world watched the game in their homes, or 46.4 percent of the global population. Four years later, <a href="https://www.fifa.com/worldcup/news/2014-fifa-world-cuptm-reached-3-2-billion-viewers-one-billion-watched--2745519" rel="noopener">FIFA World Cup Brazil</a> drew the same staggering number of viewers</p>
+		<br>
+		<br>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color:rgb(38, 133, 0);">Crowds at one Louisiana State University football game once cheered so loudly that it registered as an earthquake on a local seismograph</h1>
+		<br>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://media-cdn.tripadvisor.com/media/photo-s/07/21/95/98/lsu-tiger-stadium.jpg" width="700" height="300">
+		<br>
+		<p style="font-family: 'Courier New', Courier, monospace ; color:rgb(5, 129, 11);">The game, which took place between LSU and Auburn University, took place in front of a crowd of 79,431 fans at LSU's Tiger Stadium. The crowd's reaction to the game's final pass <a href="https://www.wbrz.com/news/it-s-been-30-years-since-lsu-s-famous-earthquake-game-/" target="_blank" rel="noopener noreferrer">registered as an earthquake</a> by a seismograph located around 1,000 feet from the stadium. A seismologist noticed the reading the next day and the game went down in LSU history as the "Earthquake Game.</p>
+		<br>
+		<br>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color:rgb(196, 118, 118);">Scientists made a "nanoguitar" the size of a human blood cell</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://news.cornell.edu/sites/default/files/styles/story_thumbnail_lg/public/2019-09/072297_guitar_tnd.jpg?itok=6Nlvkxz3" width="700" height="300">
+		<br>
+		<p style="font-family: 'Courier New', Courier, monospace ; color:rgb(160, 108, 108);">Cornell University researchers <a href="http://news.cornell.edu/stories/1997/07/worlds-smallest-silicon-mechanical-devices-are-made-cornell" target="_blank" rel="noopener noreferrer">carved the tiny musical instrument</a> out of crystalline silicon and claim that it's the world's smallest "nanoguitar" at 10 micrometers long. The guitar's six strings are each about 50 nanometers (100 atoms) wide. And while it was "made for fun to illustrate the technology," it also demonstrates how this tech could be used in fiber optics, displays, sensors, and electronics</p>
+		<br>
+		<br>
+        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color:rgb(49, 49, 49);">Einstein's brain was stolen when he died</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2021/08/cross-section-einstein-brain.jpg" width="700" height="300">
+		<br>
+		<p style="font-family: 'Courier New', Courier, monospace ; color:rgb(26, 26, 26);">When Nobel Prize-winning physicist <strong>Albert Einstein</strong> passed away on April 18, 1955, he left behind specific instructions when it came to the disposal of his body, according to one <em>National Geographic</em> investigation. Einstein didn't want his corpse to be worshiped or his brain to be studied, so he instructed those who were responsible for his remains to "cremate them, and scatter the ashes secretly in order to discourage idolaters</p>
+		<br>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color:rgb(175, 0, 0);">Santa Claus was given an official pilot's license in 1927</h1>
+		<br>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://www.kiwifamilies.co.nz/wp-content/uploads/2007/12/Is-Santa-real.jpg" width="700" height="300">
+		<br>
+		<p style="font-family: 'Courier New', Courier, monospace ; color:rgb(129, 5, 5);">When <a href="https://bestlifeonline.com/christmas-tradition-history/" target="_blank" rel="noopener noreferrer">Santa Claus</a> makes his trip around the world on Christmas Eve, you can rest assured that he's legally allowed to drive his sleigh—at least in the United States. In 1927, the jolly man in the red suit was given a pilot's license from the Assistant Secretary of Commerce for Aeronautics <strong>William P. MacCracken</strong></p>
+		<br>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color:rgb(28, 76, 91);">Shakespeare invented more than 1,700 words</h1>
+		<br>
+		<img  style="height:400px; width: 700px;" src="https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzgzMzkwNzMz/william-shakespeare-194895-1-402.jpg" width="700" height="300">
+		<br>
+		<p style="font-family: 'Courier New', Courier, monospace ; color:rgb(23, 49, 73);">Shakespeare wrote some of the most beloved and revered pieces of literature the world has ever known, but in order to craft his plays and poems, he sometimes resorted to making up his own words. In fact, The Bard is said to have come up with <a href="http://www.shakespeare-online.com/biography/wordsinvented.html" rel="noopener">more than 1,700 words</a> including moonbeam, laughable, eyeball, bump, puking, champion, bedroom, excitement, and zany</p>
+		<br>
+		<footer><p style="font-family:Verdana;"><b>food</b></p></footer>
+		<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color:rgb(158, 134, 54);">Arachibutyrophobia" is the fear of peanut butter sticking to the roof of your mouth</h1>
+		<br>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2007/10/15/0/EA1112_Peanut_Butter.jpg.rend.hgtvcom.826.620.suffix/1382375731291.jpeg" width="700" height="300">
+		<br>
+		<br>
+		<p style="font-family: 'Courier New', Courier, monospace ; color:rgb(196, 168, 79);">It's pretty common to be afraid of heights and scared of spiders, but if you have arachibutyrophobia, you're among the smaller group of people that suffer from a fear of peanut butter sticking to the roof of their mouths. This phobia is often connected to a fear of choking or a fear of sticky textures, but it can also be its own isolated fear</p>
+		<br>
+		<h1  style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(79, 61, 0);">Apples give you more energy than coffee</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://api.time.com/wp-content/uploads/2014/07/apple-coffee.jpg?w=600&quality=85" width="700" height="300">
+		<br>
+		<p  style="font-family:courier,arial,helvetica; color:rgb(88, 59, 5);">The <a href="/au/kitchen-supplies/coffee-solutions">coffee</a> snobs may not don’t want to believe it, but it’s true. If you’re ever a little low on energy during the afternoon, then consider munching into an apple instead of buying a cup of coffee. Thanks to its high carbohydrate, fiber, vitamin C and mineral content, eating apples are the perfect (and healthy) option to help you stay energized all day.The world’s most hated vegetable is one of the best for you</p>
+		<br>
+		<br>
+		<h1  style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(0, 220, 44);">Avocados are fruit</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/whole-and-sliced-avocado-on-wood-royalty-free-image-961101662-1545068511.jpg" width="700" height="300">
+		<br>
+		<p  style="font-family:courier,arial,helvetica; color:rgb(45, 209, 0);">Avocados are classified as a berry with a large seed. Avocados must be picked when matured in order to ripen, which can take between 1-2 weeks. In Spain and Mexico, avocados are called “alligator pears” due to their shape and bumpy, green skin, while in India and China, they are referred to as “butter pears”. This healthy food is good for you too! They're a great source of vitamin C, E, K, and B-6.</p>
+		<br>
+		<br>
+		<h1  style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(0, 209, 118);">The many uses of cucumbers</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/283/283006/sliced-cucumber-with-lots-of-health-benefits.jpg?w=1155&h=1444" width="700" height="300" alt="Computer Hope">
+		<br>
+		<br>
+		<p  style="font-family:courier,arial,helvetica; color:rgb(0, 209, 118);">If your bathroom mirrors fog up all the time after a hot shower, rub a cucumber slice along the mirror. It will eliminate the mist and provide a soothing, spa-like fragrance. If you’ve written something in pen and made a mistake, the outside waxy coating of the cucumber can also be used to erase pen writing! Fun fact: did you know that cucumbers are 96% water?</p>
+		<br>
+		<br>
+		<h1  style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(209, 153, 0);">The story of the sandwich</h1>
+		<br>
+		<img style="height:400px; width: 700px;" src="https://toriavey.com/images/2013/01/Sandwich-1.jpg" width="700" height="300" alt="Computer Hope">
+		<br>
+		<br>
+		<p style="font-family:courier,arial,helvetica; color:rgb(209, 153, 0);">This lunch time classic is said to have been invented by the Earl of Sandwich. An avid gambler, John Montagu was on a 24-hour streak and did not want to leave his table. He wanted to eat without having to put his cards down… thus the sandwich was born!, One small step for man, one giant leap for…. sandwiches?,Another fun fact about sandwiches is that one has been smuggled into space!Astronaut John Young smuggled a corned beef sandwich onto his spacecraft for a six-hour mission. The sandwich didn’t go too well in zero gravity conditions and could have actually had grave consequences. Floating crumbs or debris could have caused serious damage to the shuttle, but luckily they returned unharmed. NASA have since taken steps to ensure no sandwich goes into space again.</p>
+	</div>
+	<footer class="footer-distributed">
+ 
+		<div class="footer-left">
+ 
+		<h3>Plethora<span>.com</span></h3>
+ 
+		<p class="footer-links">
+		<a href="">Home</a>
+	·
+		<a href="post.html">Blog</a>
+	·
+		<a href="index.html">Pricing</a>
+	·
+		<a href="contact.html">About</a>
+	·
+		<a href="post.html">Faq</a>
+	·
+		<a href="contact.html">Contact</a>
+		</p>
+ 
+		<p class="footer-company-name">xynob &copy; 2020</p>
+		</div>
+ 
+		<div class="footer-center">
+ 
+		<div>
+		<i class="fa fa-map-marker"></i>
+		<p><span></span>UAE , AJMAN</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-phone"></i>
+		<p>05684576876</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-envelope"></i>
+		<p><a href="thepsychopanda7@gmail.com">plethoraenough@gmail.com</a></p>
+		</div>
+ 
+		</div>
+ 
+		<div class="footer-right">
+ 
+		<p class="footer-company-about">
+		<span>About the company</span>
+	Plethora is a lerning platform that offers a wide variety of educational resources, such as online courses, tutorials, and quizzes, to help users expand their knowledge and skills in different subject areas. The platform is designed to be accessible and user-friendly, with a simple navigation system and a variety of interactive tools and features. &copy; to know more
+		</p>
+ 
+		<div class="footer-icons">
+ 
+		<a href="https://www.twitch.tv/psychopandame"><i class="fa fa-twitch"></i></a>
+		<a href="https://tw lerning platform that offers a wide variety of educational resources, such as online courses, tutorials, and quizzes, to help users expand their knowledge and skills in different subject areas. The platform is designed to be accessible and user-friendly, with a simple navigation system and a variety of interactive tools and features.hepsychopanda1"><i class="fa fa-twitter"></i></a>
+		<a href="https://discord.gg/pSbQ8MgtnM"><i class="fa fa-discord"></i></a>
+		<a href="https://www.youtube.com/channel/UCKufsn1zfEnW_sRS7kP8VtQ"><i class="fa fa-YOUTUBE"></i></a>
+ 
+		</div>
+ 
+		</div>
+ 
+		</footer>
+		<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/600c3f2ea9a34e36b96f89fc/1esntdk2v';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
+
+	<button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
